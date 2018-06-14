@@ -102,6 +102,7 @@ namespace PoeHUD.Hud
             CoreMenu.Childs.Add(new InbuildPluginMenu() { Plugin = new PluginHolder("Show dps", settingsHub.DpsMeterSettings) });
             CoreMenu.Childs.Add(new InbuildPluginMenu() { Plugin = new PluginHolder("Map Icons", settingsHub.MapIconsSettings) });
             CoreMenu.Childs.Add(new InbuildPluginMenu() { Plugin = new PluginHolder("Perfomance", settingsHub.PerformanceSettings) });
+            CoreMenu.Childs.Add(new InbuildPluginMenu() { Plugin = new PluginHolder("Auto-Pot", settingsHub.AutoPotSettings) });
 
 
 

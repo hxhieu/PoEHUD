@@ -50,6 +50,7 @@ namespace PoeHUD.Hud.Settings
             HealthBarSettings = new HealthBarSettings();
             KillCounterSettings = new KillCounterSettings();
             PerformanceSettings = new PerformanceSettings();
+            AutoPotSettings = new AutoPotSettings();
         }
 
         [JsonProperty("Menu")]
@@ -84,8 +85,12 @@ namespace PoeHUD.Hud.Settings
 
         [JsonProperty("Kills Counter")]
         public KillCounterSettings KillCounterSettings { get; private set; }
+
         [JsonProperty("Performance")]
         public PerformanceSettings PerformanceSettings { get; private set; }
+
+        [JsonProperty("Auto Pot")]
+        public AutoPotSettings AutoPotSettings { get; private set; }
 
         public static SettingsHub Load()
         {
